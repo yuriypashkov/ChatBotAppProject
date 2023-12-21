@@ -12,6 +12,12 @@
 		216E72BC2B3400B90076F1C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 216E72BB2B3400B90076F1C6 /* Assets.xcassets */; };
 		216E72BF2B3400B90076F1C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 216E72BE2B3400B90076F1C6 /* Preview Assets.xcassets */; };
 		216E72C62B3401600076F1C6 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 216E72C52B3401600076F1C6 /* Keys.plist */; };
+		216E72C82B34029E0076F1C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72C72B34029E0076F1C6 /* AppDelegate.swift */; };
+		216E72CA2B3403D20076F1C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72C92B3403D20076F1C6 /* Constants.swift */; };
+		216E72CE2B3404F90076F1C6 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72CD2B3404F90076F1C6 /* MessageView.swift */; };
+		216E72D12B3405140076F1C6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72D02B3405140076F1C6 /* Message.swift */; };
+		216E72D42B3405730076F1C6 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72D32B3405730076F1C6 /* ContentViewModel.swift */; };
+		216E72D72B34063B0076F1C6 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 216E72D62B34063B0076F1C6 /* OpenAI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,11 @@
 		216E72BB2B3400B90076F1C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		216E72BE2B3400B90076F1C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		216E72C52B3401600076F1C6 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		216E72C72B34029E0076F1C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		216E72C92B3403D20076F1C6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		216E72CD2B3404F90076F1C6 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		216E72D02B3405140076F1C6 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		216E72D32B3405730076F1C6 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				216E72D72B34063B0076F1C6 /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,11 +65,13 @@
 		216E72B62B3400B80076F1C6 /* ChatBotApp */ = {
 			isa = PBXGroup;
 			children = (
-				216E72B72B3400B80076F1C6 /* ChatBotAppApp.swift */,
-				216E72B92B3400B80076F1C6 /* ContentView.swift */,
+				216E72D22B34055D0076F1C6 /* ViewModel */,
+				216E72CF2B3405050076F1C6 /* Model */,
+				216E72CC2B3404E50076F1C6 /* View */,
 				216E72BB2B3400B90076F1C6 /* Assets.xcassets */,
 				216E72BD2B3400B90076F1C6 /* Preview Content */,
 				216E72C52B3401600076F1C6 /* Keys.plist */,
+				216E72CB2B3404C60076F1C6 /* SupportingFiles */,
 			);
 			path = ChatBotApp;
 			sourceTree = "<group>";
@@ -68,6 +82,41 @@
 				216E72BE2B3400B90076F1C6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		216E72CB2B3404C60076F1C6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				216E72B72B3400B80076F1C6 /* ChatBotAppApp.swift */,
+				216E72C92B3403D20076F1C6 /* Constants.swift */,
+				216E72C72B34029E0076F1C6 /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		216E72CC2B3404E50076F1C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				216E72B92B3400B80076F1C6 /* ContentView.swift */,
+				216E72CD2B3404F90076F1C6 /* MessageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		216E72CF2B3405050076F1C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				216E72D02B3405140076F1C6 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		216E72D22B34055D0076F1C6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				216E72D32B3405730076F1C6 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +135,9 @@
 			dependencies = (
 			);
 			name = ChatBotApp;
+			packageProductDependencies = (
+				216E72D62B34063B0076F1C6 /* OpenAI */,
+			);
 			productName = ChatBotApp;
 			productReference = 216E72B42B3400B80076F1C6 /* ChatBotApp.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +166,9 @@
 				Base,
 			);
 			mainGroup = 216E72AB2B3400B80076F1C6;
+			packageReferences = (
+				216E72D52B34063B0076F1C6 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			productRefGroup = 216E72B52B3400B80076F1C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,8 +196,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				216E72C82B34029E0076F1C6 /* AppDelegate.swift in Sources */,
 				216E72BA2B3400B80076F1C6 /* ContentView.swift in Sources */,
 				216E72B82B3400B80076F1C6 /* ChatBotAppApp.swift in Sources */,
+				216E72D42B3405730076F1C6 /* ContentViewModel.swift in Sources */,
+				216E72D12B3405140076F1C6 /* Message.swift in Sources */,
+				216E72CA2B3403D20076F1C6 /* Constants.swift in Sources */,
+				216E72CE2B3404F90076F1C6 /* MessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +344,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,9 +352,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.pashkov.ChatBotApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,6 +376,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +384,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.pashkov.ChatBotApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -348,6 +414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		216E72D52B34063B0076F1C6 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		216E72D62B34063B0076F1C6 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 216E72D52B34063B0076F1C6 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 216E72AC2B3400B80076F1C6 /* Project object */;
 }
