@@ -19,7 +19,7 @@ struct MessageView: View {
                         .padding()
                         .background(Color.blue)
                         .foregroundColor(.white)
-                        .clipShape(Capsule())
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
                 }
             } else {
                 HStack {
@@ -27,7 +27,7 @@ struct MessageView: View {
                         .padding()
                         .background(Color.black)
                         .foregroundColor(.white)
-                        .clipShape(Capsule())
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
                     Spacer()
                 }
             }

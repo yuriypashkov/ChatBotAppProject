@@ -8,17 +8,18 @@
 import Foundation
 import OpenAI
 
-class ContentViewModel: ObservableObject {
+class ChatViewModel: ObservableObject {
     
-    @Published var messages: [Message] = [
-        //Message(content: "Hello, bot", isUser: true),
-        //Message(content: "Hello, human", isUser: false)
-    ]
+    @Published var messages: [Message] = []
     
     let openAI = OpenAI(apiToken: Constants.apiKey)
     
+    deinit {
+        print("viewModel deinit")
+    }
+    
     func sendMessage(content: String) {
-        let newUserMessage = Message(content: content, isUser: true)
+        let newUserMessage = Message(date: Date(), content: content, isUser: true)
         messages.append(newUserMessage)
         getBotReplay()
     }
@@ -41,7 +42,7 @@ class ContentViewModel: ObservableObject {
                     print("Error with message content")
                     return
                 }
-                let message = Message(content: content, isUser: false)
+                let message = Message(date: Date(), content: content, isUser: false)
                 //print("Message content is \(content)")
                 DispatchQueue.main.async {
                     self.messages.append(message)

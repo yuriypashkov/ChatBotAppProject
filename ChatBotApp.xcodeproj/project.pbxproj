@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214DC18F2B35579400039BFE /* PreviewSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214DC18E2B35579400039BFE /* PreviewSampleData.swift */; };
+		214DC1912B3557EB00039BFE /* SampleDialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214DC1902B3557EB00039BFE /* SampleDialogs.swift */; };
 		216E72B82B3400B80076F1C6 /* ChatBotAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72B72B3400B80076F1C6 /* ChatBotAppApp.swift */; };
-		216E72BA2B3400B80076F1C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72B92B3400B80076F1C6 /* ContentView.swift */; };
+		216E72BA2B3400B80076F1C6 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72B92B3400B80076F1C6 /* ChatView.swift */; };
 		216E72BC2B3400B90076F1C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 216E72BB2B3400B90076F1C6 /* Assets.xcassets */; };
 		216E72BF2B3400B90076F1C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 216E72BE2B3400B90076F1C6 /* Preview Assets.xcassets */; };
 		216E72C62B3401600076F1C6 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 216E72C52B3401600076F1C6 /* Keys.plist */; };
@@ -16,14 +18,22 @@
 		216E72CA2B3403D20076F1C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72C92B3403D20076F1C6 /* Constants.swift */; };
 		216E72CE2B3404F90076F1C6 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72CD2B3404F90076F1C6 /* MessageView.swift */; };
 		216E72D12B3405140076F1C6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72D02B3405140076F1C6 /* Message.swift */; };
-		216E72D42B3405730076F1C6 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72D32B3405730076F1C6 /* ContentViewModel.swift */; };
+		216E72D42B3405730076F1C6 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72D32B3405730076F1C6 /* ChatViewModel.swift */; };
 		216E72D72B34063B0076F1C6 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 216E72D62B34063B0076F1C6 /* OpenAI */; };
+		216E72D92B344B7D0076F1C6 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72D82B344B7D0076F1C6 /* Dialog.swift */; };
+		216E72DB2B3541860076F1C6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72DA2B3541860076F1C6 /* MainView.swift */; };
+		216E72DD2B3541FF0076F1C6 /* CreateChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72DC2B3541FF0076F1C6 /* CreateChatView.swift */; };
+		216E72DF2B35421E0076F1C6 /* FavoritesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72DE2B35421E0076F1C6 /* FavoritesListView.swift */; };
+		21B5B8282B354E8C00D5D528 /* DialogCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B5B8272B354E8C00D5D528 /* DialogCellView.swift */; };
+		21B5B82A2B35511C00D5D528 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B5B8292B35511C00D5D528 /* DialogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		214DC18E2B35579400039BFE /* PreviewSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSampleData.swift; sourceTree = "<group>"; };
+		214DC1902B3557EB00039BFE /* SampleDialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDialogs.swift; sourceTree = "<group>"; };
 		216E72B42B3400B80076F1C6 /* ChatBotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		216E72B72B3400B80076F1C6 /* ChatBotAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotAppApp.swift; sourceTree = "<group>"; };
-		216E72B92B3400B80076F1C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		216E72B92B3400B80076F1C6 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		216E72BB2B3400B90076F1C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		216E72BE2B3400B90076F1C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		216E72C52B3401600076F1C6 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
@@ -31,7 +41,13 @@
 		216E72C92B3403D20076F1C6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		216E72CD2B3404F90076F1C6 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		216E72D02B3405140076F1C6 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		216E72D32B3405730076F1C6 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		216E72D32B3405730076F1C6 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		216E72D82B344B7D0076F1C6 /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
+		216E72DA2B3541860076F1C6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		216E72DC2B3541FF0076F1C6 /* CreateChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChatView.swift; sourceTree = "<group>"; };
+		216E72DE2B35421E0076F1C6 /* FavoritesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListView.swift; sourceTree = "<group>"; };
+		21B5B8272B354E8C00D5D528 /* DialogCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCellView.swift; sourceTree = "<group>"; };
+		21B5B8292B35511C00D5D528 /* DialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +106,7 @@
 				216E72B72B3400B80076F1C6 /* ChatBotAppApp.swift */,
 				216E72C92B3403D20076F1C6 /* Constants.swift */,
 				216E72C72B34029E0076F1C6 /* AppDelegate.swift */,
+				214DC18E2B35579400039BFE /* PreviewSampleData.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -97,8 +114,8 @@
 		216E72CC2B3404E50076F1C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				216E72B92B3400B80076F1C6 /* ContentView.swift */,
-				216E72CD2B3404F90076F1C6 /* MessageView.swift */,
+				21B5B8262B354E5800D5D528 /* Support */,
+				21B5B8252B354E4B00D5D528 /* Screens */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				216E72D02B3405140076F1C6 /* Message.swift */,
+				216E72D82B344B7D0076F1C6 /* Dialog.swift */,
+				214DC1902B3557EB00039BFE /* SampleDialogs.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,9 +133,30 @@
 		216E72D22B34055D0076F1C6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				216E72D32B3405730076F1C6 /* ContentViewModel.swift */,
+				216E72D32B3405730076F1C6 /* ChatViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		21B5B8252B354E4B00D5D528 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				216E72B92B3400B80076F1C6 /* ChatView.swift */,
+				216E72DA2B3541860076F1C6 /* MainView.swift */,
+				216E72DC2B3541FF0076F1C6 /* CreateChatView.swift */,
+				216E72DE2B35421E0076F1C6 /* FavoritesListView.swift */,
+				21B5B8292B35511C00D5D528 /* DialogView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		21B5B8262B354E5800D5D528 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				216E72CD2B3404F90076F1C6 /* MessageView.swift */,
+				21B5B8272B354E8C00D5D528 /* DialogCellView.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,12 +237,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				216E72C82B34029E0076F1C6 /* AppDelegate.swift in Sources */,
-				216E72BA2B3400B80076F1C6 /* ContentView.swift in Sources */,
+				216E72DD2B3541FF0076F1C6 /* CreateChatView.swift in Sources */,
+				216E72DB2B3541860076F1C6 /* MainView.swift in Sources */,
+				216E72BA2B3400B80076F1C6 /* ChatView.swift in Sources */,
 				216E72B82B3400B80076F1C6 /* ChatBotAppApp.swift in Sources */,
-				216E72D42B3405730076F1C6 /* ContentViewModel.swift in Sources */,
+				216E72D42B3405730076F1C6 /* ChatViewModel.swift in Sources */,
+				21B5B82A2B35511C00D5D528 /* DialogView.swift in Sources */,
+				216E72DF2B35421E0076F1C6 /* FavoritesListView.swift in Sources */,
 				216E72D12B3405140076F1C6 /* Message.swift in Sources */,
 				216E72CA2B3403D20076F1C6 /* Constants.swift in Sources */,
 				216E72CE2B3404F90076F1C6 /* MessageView.swift in Sources */,
+				214DC1912B3557EB00039BFE /* SampleDialogs.swift in Sources */,
+				21B5B8282B354E8C00D5D528 /* DialogCellView.swift in Sources */,
+				216E72D92B344B7D0076F1C6 /* Dialog.swift in Sources */,
+				214DC18F2B35579400039BFE /* PreviewSampleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +382,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatBotApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4524FJSV52;
 				ENABLE_PREVIEWS = YES;
@@ -342,14 +390,14 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.pashkov.ChatBotApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -366,7 +414,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatBotApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4524FJSV52;
 				ENABLE_PREVIEWS = YES;
@@ -374,14 +422,14 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.pashkov.ChatBotApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

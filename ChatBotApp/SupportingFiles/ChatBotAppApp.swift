@@ -6,16 +6,17 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct ChatBotAppApp: App {
     
     @UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
-    var apiKey: String = ""
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
+        .modelContainer(for: Dialog.self) 
     }
 }
