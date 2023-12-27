@@ -16,9 +16,11 @@ struct DialogView: View {
             ScrollView {
                 ForEach(dialog.messages.sorted {$0.date < $1.date}) { message in
                     MessageView(message: message)
+                        .padding(4)
                 }
             }
         }
         .toolbar(.hidden, for: .tabBar)
+        .navigationTitle(dialog.title)
     }
 }

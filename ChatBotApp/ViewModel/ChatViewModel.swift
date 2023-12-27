@@ -10,7 +10,10 @@ import OpenAI
 
 class ChatViewModel: ObservableObject {
     
-    @Published var messages: [Message] = []
+    @Published var messages: [Message] = [
+//        Message(date: Date(), content: "First message", isUser: true),
+//        Message(date: Date(), content: "Second message", isUser: false)
+    ]
     
     let openAI = OpenAI(apiToken: Constants.apiKey)
     

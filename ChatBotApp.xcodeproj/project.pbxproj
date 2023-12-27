@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		214DC18F2B35579400039BFE /* PreviewSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214DC18E2B35579400039BFE /* PreviewSampleData.swift */; };
 		214DC1912B3557EB00039BFE /* SampleDialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214DC1902B3557EB00039BFE /* SampleDialogs.swift */; };
+		215A69BD2B3849630037438D /* TestMessageBcsFuckingPreviewProviderNotWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A69BC2B3849630037438D /* TestMessageBcsFuckingPreviewProviderNotWorks.swift */; };
+		215A69BF2B384FCF0037438D /* EnterDialogNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A69BE2B384FCF0037438D /* EnterDialogNameView.swift */; };
 		216E72B82B3400B80076F1C6 /* ChatBotAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72B72B3400B80076F1C6 /* ChatBotAppApp.swift */; };
 		216E72BA2B3400B80076F1C6 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72B92B3400B80076F1C6 /* ChatView.swift */; };
 		216E72BC2B3400B90076F1C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 216E72BB2B3400B90076F1C6 /* Assets.xcassets */; };
@@ -26,11 +28,14 @@
 		216E72DF2B35421E0076F1C6 /* FavoritesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E72DE2B35421E0076F1C6 /* FavoritesListView.swift */; };
 		21B5B8282B354E8C00D5D528 /* DialogCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B5B8272B354E8C00D5D528 /* DialogCellView.swift */; };
 		21B5B82A2B35511C00D5D528 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B5B8292B35511C00D5D528 /* DialogView.swift */; };
+		21F527E92B3C03E700636E26 /* SuccessSaveDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F527E82B3C03E700636E26 /* SuccessSaveDialogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		214DC18E2B35579400039BFE /* PreviewSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSampleData.swift; sourceTree = "<group>"; };
 		214DC1902B3557EB00039BFE /* SampleDialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDialogs.swift; sourceTree = "<group>"; };
+		215A69BC2B3849630037438D /* TestMessageBcsFuckingPreviewProviderNotWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMessageBcsFuckingPreviewProviderNotWorks.swift; sourceTree = "<group>"; };
+		215A69BE2B384FCF0037438D /* EnterDialogNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterDialogNameView.swift; sourceTree = "<group>"; };
 		216E72B42B3400B80076F1C6 /* ChatBotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		216E72B72B3400B80076F1C6 /* ChatBotAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotAppApp.swift; sourceTree = "<group>"; };
 		216E72B92B3400B80076F1C6 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
@@ -48,6 +53,7 @@
 		216E72DE2B35421E0076F1C6 /* FavoritesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListView.swift; sourceTree = "<group>"; };
 		21B5B8272B354E8C00D5D528 /* DialogCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCellView.swift; sourceTree = "<group>"; };
 		21B5B8292B35511C00D5D528 /* DialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
+		21F527E82B3C03E700636E26 /* SuccessSaveDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessSaveDialogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,9 @@
 			children = (
 				216E72CD2B3404F90076F1C6 /* MessageView.swift */,
 				21B5B8272B354E8C00D5D528 /* DialogCellView.swift */,
+				215A69BC2B3849630037438D /* TestMessageBcsFuckingPreviewProviderNotWorks.swift */,
+				215A69BE2B384FCF0037438D /* EnterDialogNameView.swift */,
+				21F527E82B3C03E700636E26 /* SuccessSaveDialogView.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -241,8 +250,11 @@
 				216E72DB2B3541860076F1C6 /* MainView.swift in Sources */,
 				216E72BA2B3400B80076F1C6 /* ChatView.swift in Sources */,
 				216E72B82B3400B80076F1C6 /* ChatBotAppApp.swift in Sources */,
+				215A69BD2B3849630037438D /* TestMessageBcsFuckingPreviewProviderNotWorks.swift in Sources */,
 				216E72D42B3405730076F1C6 /* ChatViewModel.swift in Sources */,
 				21B5B82A2B35511C00D5D528 /* DialogView.swift in Sources */,
+				215A69BF2B384FCF0037438D /* EnterDialogNameView.swift in Sources */,
+				21F527E92B3C03E700636E26 /* SuccessSaveDialogView.swift in Sources */,
 				216E72DF2B35421E0076F1C6 /* FavoritesListView.swift in Sources */,
 				216E72D12B3405140076F1C6 /* Message.swift in Sources */,
 				216E72CA2B3403D20076F1C6 /* Constants.swift in Sources */,
@@ -382,7 +394,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatBotApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4524FJSV52;
 				ENABLE_PREVIEWS = YES;
@@ -391,7 +403,6 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -404,7 +415,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -414,7 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatBotApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4524FJSV52;
 				ENABLE_PREVIEWS = YES;
@@ -423,7 +434,6 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -436,7 +446,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

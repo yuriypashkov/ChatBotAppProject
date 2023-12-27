@@ -12,15 +12,22 @@ struct CreateChatView: View {
         NavigationStack {
             VStack {
                 // shitty warn
-                Text("Hello. This is a simple ChatGPT-bot. To start chat please tap button below.")
+                Text("Hello. This is a simple ChatGPT-bot.\nTo start chat please tap button below.")
                     .multilineTextAlignment(.center)
+                    .padding()
                 NavigationLink {
                     ChatView()
                         .toolbar(.hidden, for: .tabBar)
                 } label: {
-                    Text("Start dialog")
+                    Text("Start chat")
+                        .padding()
+                        .font(.system(size: 18, weight: .semibold))
+                        .background(.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(16)
+                        
                 }
-
+                Spacer()
             }
             .navigationTitle("ChatBot")
             .navigationBarTitleDisplayMode(.inline)

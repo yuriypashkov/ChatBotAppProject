@@ -13,9 +13,11 @@ class Dialog {
     
     var title: String
     var messages: [Message]
+    var createAt: Date
     
     init(title: String, messages: [Message]) {
         self.title = title
         self.messages = messages
+        self.createAt = Date()
     }
 }
